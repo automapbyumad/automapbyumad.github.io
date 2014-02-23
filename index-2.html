@@ -1,0 +1,83 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr">
+  <head>
+    <title>AutoMap Website</title>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <link rel="stylesheet" media="screen" type="text/css" title="design" href="css/design.css" />
+	 <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js"></script>
+	 <script type="text/javascript" src="lib/fancybox/jquery.easing-1.3.pack.js"></script>
+	 <script type="text/javascript" src="lib/fancybox/jquery.mousewheel-3.0.4.pack.js"></script>
+	 <script type="text/javascript" src="lib/fancybox/jquery.fancybox-1.3.4.pack.js"></script>
+	 <link rel="stylesheet" type="text/css" href="lib/fancybox/jquery.fancybox-1.3.4.css" media="screen" />
+	 <script type="text/javascript">
+	 	$(document).ready(function() {
+ 	 	  	$("a.fan").fancybox({
+		"titleShow"     : false,
+		"transitionIn"	: "elastic",
+		"transitionOut"	: "elastic",
+		"easingIn"      : "easeOutBack",
+		"easingOut"     : "easeInBack"
+ 	 	  	});
+ 	   	});
+    	 </script>
+  </head>
+  <body>
+
+  <div id="container">
+      <div id="header">
+          <div id="pres">
+	           <p>La cartographie de demain !</p>
+          </div>
+      </div>
+
+      <div id="menu">
+          <ul>
+              <li><a href="index.html">Accueil</a></li>
+              <li><a href="project.html">Projet</a></li>
+              <li><a href="telechargement.html">Téléchargement</a></li>
+              <li><a href="team.html">L'équipe</a></li>
+              <li><a href="contact.html">Contact</a></li>
+              <li><a href="liens.html">Liens</a></li>
+          </ul>
+      </div>
+
+      <div id="milieu">
+          <div id="contenu"><h1>Présentation du programme</h1>
+<p>AutoMap est un logiciel de cartographie 3D <b>intuitif</b>, <b>puissant</b> et <b>multiplateforme</b> ! 
+Grâce à AutoMap vous pourrez très aisément convertir vos relevés topologiques en une <b>magnifique</b> représentation tridimensionnelle.</p>
+<p>AutoMap a été codé en Objective Caml et utilise les bibliothèques <b>glMLite</b>, <b>LablGTK</b> et <b>OcamlSDL</b> pour fonctionner.</p>
+
+<p>AutoMap a été réalisé dans le cadre du projet du 1<sup>er</sup> semestre de deuxième année à l'<b>EPITA</b>.</p>
+
+<h1>News</h1>
+
+<p class="date">Samedi 10 Décembre 2011 à 1:46,</p> <div class="news"><div class="newscontent"><p><b>SkyBox</b> et plan d'eau <b>animé</b></p>
+<p>Nous avons rajouté une skybox aussi simplement que de rajouter un cube texturé non influencé par la lumière !</p><p>Par ailleurs, le plan d'eau est maintenant animé ! Un peu plus de perturbation dans ce monde figé ne faisait pas de mal :D</p>
+
+<a class="fan" href="images/skybox_n_water.png"><img width="100%" src="images/light/skybox_n_water.png" /></a><div style="clear:both;"></div></div></div><p class="date">Mercredi 7 Décembre 2011 à 10:28,</p> <div class="news"><div class="newscontent"><p>En avant avec les <b>Detail Map</b> ainsi qu'un plan <b>d'eau</b> !</p>
+<p>Nous avons été obligé de modifier légèrement glMLite pour rajouter la fonction glClientActiveTexture, sans ça, le multi-texturing avec les VBO aurait été <b>impossible</b> ! Heureusement que ce genre de binding consiste simplement à lister les équivalents des fonctions entre le C et OCaml :D</p>
+
+<a class="fan" href="images/eire_automap.png"><img width="100%" src="images/light/eire_automap.png" /></a>
+<a class="fan" href="images/eire_automap2.png"><img width="100%" src="images/light/eire_automap2.png" /></a>
+<div style="clear:both;"></div></div></div><p class="date">Mardi 6 Décembre 2011 à 22:39,</p> <div class="news"><div class="newscontent"><p>Et si les <b>ombres</b> c'était pas perdu d'avance ?</p>
+<p>Ceci a été obtenu en mixant au processus de précalcul des normales un algorithme de projeté de rayons.</p>
+
+<a class="fan" href="images/lightmap.png"><img width="100%" src="images/light/lightmap.png" /></a>
+<a class="fan" href="images/lightmap2.png"><img width="100%" src="images/light/lightmap2.png" /></a><div style="clear:both;"></div></div></div><div class="pagination">Page : <a href="index.html">1</a> <span class="current">2</span> <a href="index-3.html">3</a> <a href="index-4.html">4</a> <a href="index-5.html">5</a> </div></div>
+
+          <div class="clear">
+          </div>
+      </div>
+
+      <div id="footer">
+          <div id="gauche">
+              <p>AutoMap Copyright2011 - Tous droits réservés</p>
+          </div>
+
+          <div id="droite">
+              <p>Site optimisé pour le navigateur Mozilla Firefox.</p>
+          </div>
+      </div>
+  </div>
+  </body>
+</html>

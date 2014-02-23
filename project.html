@@ -1,0 +1,93 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr">
+  <head>
+    <title>AutoMap Website</title>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <link rel="stylesheet" media="screen" type="text/css" title="design" href="css/design.css" />
+	 <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js"></script>
+	 <script type="text/javascript" src="lib/fancybox/jquery.easing-1.3.pack.js"></script>
+	 <script type="text/javascript" src="lib/fancybox/jquery.mousewheel-3.0.4.pack.js"></script>
+	 <script type="text/javascript" src="lib/fancybox/jquery.fancybox-1.3.4.pack.js"></script>
+	 <link rel="stylesheet" type="text/css" href="lib/fancybox/jquery.fancybox-1.3.4.css" media="screen" />
+	 <script type="text/javascript">
+	 	$(document).ready(function() {
+ 	 	  	$("a.fan").fancybox({
+		"titleShow"     : false,
+		"transitionIn"	: "elastic",
+		"transitionOut"	: "elastic",
+		"easingIn"      : "easeOutBack",
+		"easingOut"     : "easeInBack"
+ 	 	  	});
+ 	   	});
+    	 </script>
+  </head>
+  <body>
+
+  <div id="container">
+      <div id="header">
+          <div id="pres">
+	           <p>La cartographie de demain !</p>
+          </div>
+      </div>
+
+      <div id="menu">
+          <ul>
+              <li><a href="index.html">Accueil</a></li>
+              <li><a href="project.html">Projet</a></li>
+              <li><a href="telechargement.html">Téléchargement</a></li>
+              <li><a href="team.html">L'équipe</a></li>
+              <li><a href="contact.html">Contact</a></li>
+              <li><a href="liens.html">Liens</a></li>
+          </ul>
+      </div>
+
+      <div id="milieu">
+          <div id="contenu"><h1>Présentation du projet</h1>
+<p>AutoMap a été réalisé en Objective Caml en utilisant les bibliothèques OcamlSDL, glMLite et LablGTK par l'équipe <a href="team.php.html">UMAD</a>.</p>
+
+<p>AutoMap est capable de transformer n'importe quelle image représentant un relief (tel que des cartes topologiques), en couleurs ou en niveaux de gris, en une représentation tridimensionnelle beaucoup plus visuelle et intuitive qu'une simple image ! Cela vous permettra de vous déplacer dans l'espace et de visualiser plus facilement le relief de votre image.</p>
+
+<p>AutoMap génère un fichier Wavefront (.obj) standard compatible avec Blender entre autres ce qui vous permettra d'exporter votre modèle pour votre logiciel de modélisation 3D favori pouvant lire les fichiers Wavefront (.obj) !</p>
+
+<p>Il y a plusieurs étapes avant la génération du modèle 3D : 
+
+<table>
+<tbody>
+<tr><td>&bull; Élimination du bruit</td><td><a rel="proj" class="fan" href="images/bruit.png"><img alt="" width="250px" src="images/bruit.png" /></a></td>
+<tr><td>&bull; Détection des contours</td><td><a rel="proj" class="fan" href="images/border.png"><img alt="" width="250px" src="images/border.png" /></a></td>
+<tr><td>&bull; Génération de la grille</td><td><a rel="proj" class="fan" href="images/quadri.png"><img alt="" width="250px" src="images/quadri.png" /></a></td>
+<tr><td>&bull; Précalcul des normales et des ombres</td><td><a rel="proj" class="fan" href="images/pre.png"><img alt="" width="250px" src="images/pre.png" /></a></td>
+</tr>
+</tbody>
+</table>
+
+<p>Après avoir passé ces étapes, vous serez en mesure d'afficher le terrain généré via une interface utilisant OpenGL (un moteur 3D) et de vous mouvoir dans l'espace. </p>
+
+<p>AutoMap gère plusieurs modes d'affichages :
+<table>
+<tbody>
+<tr><td>&bull; Vue fil de fer</td><td><a rel="proj" class="fan" href="images/wireframe.png"><img alt="" width="250px" src="images/wireframe.png" /></a></td></tr>
+<tr><td>&bull; Vue fil de fer texturé</td><td><a rel="proj" class="fan" href="images/textured_wireframe.png"><img alt="" width="250px" src="images/textured_wireframe.png" /></a></td></tr>
+<tr><td>&bull; Vue solide texturée</td><td><a rel="proj" class="fan" href="images/textured_solid.png"><img alt="" width="250px" src="images/textured_solid.png" /></a></td></tr>
+
+</tbody>
+</table>
+</p>
+</div>
+
+          <div class="clear">
+          </div>
+      </div>
+
+      <div id="footer">
+          <div id="gauche">
+              <p>AutoMap Copyright2011 - Tous droits réservés</p>
+          </div>
+
+          <div id="droite">
+              <p>Site optimisé pour le navigateur Mozilla Firefox.</p>
+          </div>
+      </div>
+  </div>
+  </body>
+</html>

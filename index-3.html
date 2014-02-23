@@ -1,0 +1,104 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr">
+  <head>
+    <title>AutoMap Website</title>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <link rel="stylesheet" media="screen" type="text/css" title="design" href="css/design.css" />
+	 <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js"></script>
+	 <script type="text/javascript" src="lib/fancybox/jquery.easing-1.3.pack.js"></script>
+	 <script type="text/javascript" src="lib/fancybox/jquery.mousewheel-3.0.4.pack.js"></script>
+	 <script type="text/javascript" src="lib/fancybox/jquery.fancybox-1.3.4.pack.js"></script>
+	 <link rel="stylesheet" type="text/css" href="lib/fancybox/jquery.fancybox-1.3.4.css" media="screen" />
+	 <script type="text/javascript">
+	 	$(document).ready(function() {
+ 	 	  	$("a.fan").fancybox({
+		"titleShow"     : false,
+		"transitionIn"	: "elastic",
+		"transitionOut"	: "elastic",
+		"easingIn"      : "easeOutBack",
+		"easingOut"     : "easeInBack"
+ 	 	  	});
+ 	   	});
+    	 </script>
+  </head>
+  <body>
+
+  <div id="container">
+      <div id="header">
+          <div id="pres">
+	           <p>La cartographie de demain !</p>
+          </div>
+      </div>
+
+      <div id="menu">
+          <ul>
+              <li><a href="index.html">Accueil</a></li>
+              <li><a href="project.html">Projet</a></li>
+              <li><a href="telechargement.html">Téléchargement</a></li>
+              <li><a href="team.html">L'équipe</a></li>
+              <li><a href="contact.html">Contact</a></li>
+              <li><a href="liens.html">Liens</a></li>
+          </ul>
+      </div>
+
+      <div id="milieu">
+          <div id="contenu"><h1>Présentation du programme</h1>
+<p>AutoMap est un logiciel de cartographie 3D <b>intuitif</b>, <b>puissant</b> et <b>multiplateforme</b> ! 
+Grâce à AutoMap vous pourrez très aisément convertir vos relevés topologiques en une <b>magnifique</b> représentation tridimensionnelle.</p>
+<p>AutoMap a été codé en Objective Caml et utilise les bibliothèques <b>glMLite</b>, <b>LablGTK</b> et <b>OcamlSDL</b> pour fonctionner.</p>
+
+<p>AutoMap a été réalisé dans le cadre du projet du 1<sup>er</sup> semestre de deuxième année à l'<b>EPITA</b>.</p>
+
+<h1>News</h1>
+
+<p class="date">Dimanche 4 Décembre 2011 à 17:52,</p> <div class="news"><div class="newscontent"><p><b> IN 3 D !!!!</b></p>
+
+<a class="fan" href="images/IN3D.png"><img width="100%" src="images/light/IN3D.png" /></a>
+<iframe width="560" height="315" src="http://www.youtube.com/embed/DN-ZUlyrb0I" frameborder="0" allowfullscreen></iframe><div style="clear:both;"></div></div></div><p class="date">Mercredi 30 Novembre 2011 à 18:53,</p> <div class="news"><div class="newscontent"><p><b>Vertex Buffer Objects</b> et <b>glMLite</b></p>
+
+<p>LablGL a plein de qualités, celles de OpenGL 1.X. Or cette version de OpenGL ne supporte pas une optimisation absolument géniale qui s'appelle les Vertex Buffer Object (VBO)!</p>
+
+<p>Les VBO consistent au fait de n'envoyer qu'une seule fois le tableau de point et de faces (ou autres comme les normales, textures etc ...) à la carte graphique. Ces données sont donc allouées dans un espace mémoire de la carte graphique et elle va pouvoir récupérer les informations toute seule et sans laps de temps.</p>
+
+<p>En quelques heures nous nous sommes penchés sur glMLite que nous avions testé auparavant mais laissé de côté par peur de ne plus être compatible avec LablGTK. Nous avons ensuite converti tout le code et les instructions vers glMLite afin de pouvoir utiliser les nouveautés de OpenGL 3.X</p>
+
+<p>Suite à cela, nous avons ajouté la gestion des VBO et là ce fut le comble !</p>
+
+<p>Nous avons la possibilité dorénavant de monter jusqu'à 10 millions de points et 8 millions de facettes sans un seul lag et de plus, sur des laptop pas du tout récents (même pas bi-coeur) avec une carte graphique dédiée.
+</p>
+
+<a class="fan" href="images/VBO.png"><img width="100%" src="images/light/VBO.png" /></a>
+<br /></p>
+<br />
+<p> Un exemple de log lorsqu'on essaie de pousser la machine à fond (ça commence à être ingérable à ce stade là) :</p>
+<pre>
+max size : 111848109
+real size : 14501454
+time spent : 97.629596 sec.
+Changed display mode to textured solid
+Trying to load 3D model ...
+Loading 3D model ...
+vertices : 14501454
+faces : 8700871
+done
+3D model successfuly loaded !</pre><div style="clear:both;"></div></div></div><p class="date">Jeudi 27 Octobre 2011 à 13:23,</p> <div class="news"><div class="newscontent"><p>Quad Tree : quand la magie opère...
+
+<a class="fan" href="images/quadtree.png"><img width="100%" src="images/light/quadtree.png" /></a>
+<br /></p><p>100 000 points :D</p><div style="clear:both;"></div></div></div><div class="pagination">Page : <a href="index.html">1</a> <a href="index-2.html">2</a> <span class="current">3</span> <a href="index-4.html">4</a> <a href="index-5.html">5</a> </div></div>
+
+          <div class="clear">
+          </div>
+      </div>
+
+      <div id="footer">
+          <div id="gauche">
+              <p>AutoMap Copyright2011 - Tous droits réservés</p>
+          </div>
+
+          <div id="droite">
+              <p>Site optimisé pour le navigateur Mozilla Firefox.</p>
+          </div>
+      </div>
+  </div>
+  </body>
+</html>

@@ -1,0 +1,86 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr">
+  <head>
+    <title>AutoMap Website</title>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <link rel="stylesheet" media="screen" type="text/css" title="design" href="css/design.css" />
+	 <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js"></script>
+	 <script type="text/javascript" src="lib/fancybox/jquery.easing-1.3.pack.js"></script>
+	 <script type="text/javascript" src="lib/fancybox/jquery.mousewheel-3.0.4.pack.js"></script>
+	 <script type="text/javascript" src="lib/fancybox/jquery.fancybox-1.3.4.pack.js"></script>
+	 <link rel="stylesheet" type="text/css" href="lib/fancybox/jquery.fancybox-1.3.4.css" media="screen" />
+	 <script type="text/javascript">
+	 	$(document).ready(function() {
+ 	 	  	$("a.fan").fancybox({
+		"titleShow"     : false,
+		"transitionIn"	: "elastic",
+		"transitionOut"	: "elastic",
+		"easingIn"      : "easeOutBack",
+		"easingOut"     : "easeInBack"
+ 	 	  	});
+ 	   	});
+    	 </script>
+  </head>
+  <body>
+
+  <div id="container">
+      <div id="header">
+          <div id="pres">
+	           <p>La cartographie de demain !</p>
+          </div>
+      </div>
+
+      <div id="menu">
+          <ul>
+              <li><a href="index.html">Accueil</a></li>
+              <li><a href="project.html">Projet</a></li>
+              <li><a href="telechargement.html">Téléchargement</a></li>
+              <li><a href="team.html">L'équipe</a></li>
+              <li><a href="contact.html">Contact</a></li>
+              <li><a href="liens.html">Liens</a></li>
+          </ul>
+      </div>
+
+      <div id="milieu">
+          <div id="contenu"><h1>Présentation du programme</h1>
+<p>AutoMap est un logiciel de cartographie 3D <b>intuitif</b>, <b>puissant</b> et <b>multiplateforme</b> ! 
+Grâce à AutoMap vous pourrez très aisément convertir vos relevés topologiques en une <b>magnifique</b> représentation tridimensionnelle.</p>
+<p>AutoMap a été codé en Objective Caml et utilise les bibliothèques <b>glMLite</b>, <b>LablGTK</b> et <b>OcamlSDL</b> pour fonctionner.</p>
+
+<p>AutoMap a été réalisé dans le cadre du projet du 1<sup>er</sup> semestre de deuxième année à l'<b>EPITA</b>.</p>
+
+<h1>News</h1>
+
+<p class="date">Mercredi 26 Octobre 2011 à 21:51,</p> <div class="news"><div class="newscontent"><p>Première soutenance : DONE</p>
+
+<a rel="soutenance1" class="fan" href="images/soutenance_1/automap.png"><img width="100px" src="images/soutenance_1/automap.png"/></a>
+<a rel="soutenance1" class="fan" href="images/soutenance_1/canny.png"><img width="100px" src="images/soutenance_1/canny.png"/></a>
+<a rel="soutenance1" class="fan" href="images/soutenance_1/contour.png"><img width="100px" src="images/soutenance_1/contour.png"/></a>
+<a rel="soutenance1" class="fan" href="images/soutenance_1/quadrillage.png"><img width="100px" src="images/soutenance_1/quadrillage.png"/></a>
+<a rel="soutenance1" class="fan" href="images/soutenance_1/3D.png"><img width="100px" src="images/soutenance_1/3D.png"/></a>
+<div style="clear:both;"></div></div></div><p class="date">Mercredi 12 Octobre 2011 à 2:16,</p> <div class="news"><div class="newscontent"><p>Premier rendu OpenGL !</p>
+<a class="fan" href="images/Capture-AutoMap.png"><img width="200px" src="images/Capture-AutoMap.png"/></a>
+<p>Après avoir bataillé pendant deux jours à trouver la documentation de référence de <a href="http://docs.camlcity.org/docs/godilib/3.12/lablGL">lablGL</a>, nous avons pu travailler sur les bases de tutoriaux en C pour comprendre la logique assez étrange au premier abord, de OpenGL.</p>
+
+<p>Pendant ce temps, la détection de contours avance un peu, nous sommes en mesure de détecter les contours d'une image sans aucun bruit (transitions brutales) par un balayage sur X et un deuxième sur Y.</p><div style="clear:both;"></div></div></div><p class="date">Lundi 10 Octobre 2011 à 16:34,</p> <div class="news"><div class="newscontent">Une semaine s'est passée et nous avons été lâchés dans la nature (un peu d'autonomie ne fait pas de mal!).
+Les bindings OpenGL et SDL pour Ocaml sont assez mal documentés ou trop peu discrets par rapport à ceux disponibles pour le C ou le C++.
+Il est ainsi difficile de savoir quel binding choisir à moins de les tester tous et de demander conseil aux promos supérieures : chose que nous avons faite !
+
+Nous utiliserons OcamlSDL et LablGL.<div style="clear:both;"></div></div></div><div class="pagination">Page : <a href="index.html">1</a> <a href="index-2.html">2</a> <a href="index-3.html">3</a> <span class="current">4</span> <a href="index-5.html">5</a> </div></div>
+
+          <div class="clear">
+          </div>
+      </div>
+
+      <div id="footer">
+          <div id="gauche">
+              <p>AutoMap Copyright2011 - Tous droits réservés</p>
+          </div>
+
+          <div id="droite">
+              <p>Site optimisé pour le navigateur Mozilla Firefox.</p>
+          </div>
+      </div>
+  </div>
+  </body>
+</html>
